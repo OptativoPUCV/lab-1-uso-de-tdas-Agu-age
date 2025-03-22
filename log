@@ -106,3 +106,9 @@ exercises.c:63:4: error: declaration of non-variable 'fisrt' in 'for' loop initi
 cc1.exe: all warnings being treated as errors
 Compilation failed
 829e05b
+Sat, Mar 22, 2025  6:36:30 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|3
+total_score: 20/70
+349b73c

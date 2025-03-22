@@ -60,7 +60,7 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    int suma = 0;
-   for(void *elemento = fisrt(L); elemento != NULL; elemento = next(L))
+   for(void *elemento = first(L); elemento != NULL; elemento = next(L))
    {
       suma += *(int*)elemento;
    }
