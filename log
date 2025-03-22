@@ -37,3 +37,31 @@ test.c:217:9: error: implicit declaration of function 'parentesisBalanceados' [-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 55b928c
+Sat, Mar 22, 2025  6:34:31 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c:70:1: error: "/*" within comment [-Werror=comment]
+ /*
+  
+exercises.c:83:1: error: "/*" within comment [-Werror=comment]
+ /*
+  
+exercises.c:93:1: error: "/*" within comment [-Werror=comment]
+ /*
+  
+test.c: In function 'test_suma_lista':
+test.c:100:17: error: implicit declaration of function 'sumaLista' [-Werror=implicit-function-declaration]
+     int suma2 = sumaLista(L);
+                 ^~~~~~~~~
+test.c: In function 'test_elimina_elemento':
+test.c:132:5: error: implicit declaration of function 'eliminaElementos' [-Werror=implicit-function-declaration]
+     eliminaElementos(L, elem);
+     ^~~~~~~~~~~~~~~~
+test.c: In function 'test_copia_pila':
+test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=implicit-function-declaration]
+     copia_pila(P1, P2);
+     ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8212821
