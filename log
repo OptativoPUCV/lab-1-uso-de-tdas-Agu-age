@@ -91,3 +91,18 @@ test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4e08bc1
+Sat, Mar 22, 2025  6:36:08 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:63:25: error: implicit declaration of function 'fisrt' [-Werror=implicit-function-declaration]
+    for(void *elemento = fisrt(L); elemento != NULL; elemento = next(L))
+                         ^~~~~
+exercises.c:63:25: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:63:4: error: declaration of non-variable 'fisrt' in 'for' loop initial declaration
+    for(void *elemento = fisrt(L); elemento != NULL; elemento = next(L))
+    ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+829e05b

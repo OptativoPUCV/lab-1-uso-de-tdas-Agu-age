@@ -58,7 +58,7 @@ Ejercicio 2.
 Crea una función que reciba una lista de enteros (int*) y 
 retorne la suma de sus elementos.
 */
-/*int sumaLista(List *L) {
+int sumaLista(List *L) {
    int suma = 0;
    for(void *elemento = fisrt(L); elemento != NULL; elemento = next(L))
    {
@@ -76,7 +76,7 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-/*void eliminaElementos(List*L, int elem){
+void eliminaElementos(List*L, int elem){
 
 }
 
@@ -87,7 +87,7 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-/*void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) {
 }
 
 /*
