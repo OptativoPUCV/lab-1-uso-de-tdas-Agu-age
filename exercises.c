@@ -150,18 +150,10 @@ int parentesisBalanceados(char *cadena)
       }
       cadena++;
    }
-   int resultadoBalanceo;
-   if(top(aux) == NULL)
-   {
-      resultadoBalanceo = 1;
-   }
-   else{
-      while(top(aux) != NULL){
-         char *resto = (char*) pop(aux);
-         free(resto);
-      }
-      resultadoBalanceo = 0;
-   }
-   return resultadoBalanceo;
+
+   if(top(aux) == NULL) return 1;
+
+   free(aux);
+   return 0;
 }
 
