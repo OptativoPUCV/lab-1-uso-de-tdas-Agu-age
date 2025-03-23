@@ -124,3 +124,9 @@ Sat, Mar 22, 2025  6:48:05 PM:
  tests:  4|1
 total_score: 50/70
 1166138
+Sat, Mar 22, 2025  9:01:53 PM: 
+ exercises.c | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+ tests:  4|0
+   [info] Cadena: ((()))
+526833e
