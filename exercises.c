@@ -139,11 +139,29 @@ int parentesisBalanceados(char *cadena)
 
          if ((*cadena == ')' && elem != '(') || 
          (*cadena == ']' && elem != '[') || 
-         (*cadena == '}' && elem != '{')) return 0;
+         (*cadena == '}' && elem != '{')) {
+
+            while(top(aux) != NULL){
+               char *resto = (char*) pop(aux);
+               free(resto);
+            }
+            return 0;
+         }
       }
       cadena++;
    }
-   if(top(aux) == NULL) exit(1);
-   return 0;
+   int resultadoBalanceo;
+   if(top(aux) == NULL)
+   {
+      resultadoBalanceo = 1;
+   }
+   else{
+      while(top(aux) != NULL){
+         char *resto = (char*) pop(aux);
+         free(resto);
+      }
+      resultadoBalanceo = 0;
+   }
+   return resultadoBalanceo;
 }
 
